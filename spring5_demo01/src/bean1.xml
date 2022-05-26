@@ -13,6 +13,10 @@
     <bean id="book" class="com.mjd.spring5.Book">
         <property name="bname" value="易筋经"/>
         <property name="bauthor" value="达摩老祖"/>
+        <property name="address">
+            <value><![CDATA[<<南京>>]]>"</value>
+        </property>
+
     </bean>
 
 
