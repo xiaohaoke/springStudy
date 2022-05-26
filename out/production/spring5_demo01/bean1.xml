@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.mjd.spring5.User"/>
+    <bean id="username" class="com.mjd.spring5.User">
+
+    </bean>
+
+    <!--使用set方法注入-->
+    <bean id="book" class="com.mjd.spring5.Book">
+        <property name="bname" value="易筋经"/>
+        <property name="bauthor" value="达摩老祖"/>
+    </bean>
+
+
+
+    <!--利用有参构造注入属性-->
+    <bean id="orders" class="com.mjd.spring5.Orders">
+        <constructor-arg name="oname" value="电脑"/>
+        <constructor-arg name="address" value="China"/>
+    </bean>
+
+</beans>
